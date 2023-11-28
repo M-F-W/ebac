@@ -1,0 +1,389 @@
+/*font-family: 'Anton', sans-serif;         -Titulos
+font-family: 'Montserrat', sans-serif;      -Fonte default 
+font-family: 'Pacifico', cursive;           -Titulo logo do Jack*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#cabecalho,
+#cabecalho button {
+  background-color: rgb(43, 42, 33);
+}
+
+#cabecalho .navbar-toggler-icon {
+  background-image: url("https://img.icons8.com/ios/50/ffffff/menu-squared-2.png");
+}
+
+#cabecalho .navbar-toggler {
+  color: #ffffff00;
+}
+
+#sobre,
+#orcamento {
+  background-color: rgb(155, 150, 104);
+}
+
+#cabecalho img {
+  background-color: #fff;
+}
+
+#cabecalho h2,
+#sobre h2,
+#informacoes h2,
+#orcamento h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 48px;
+  color: #fff;
+}
+
+#cabecalho h2 span {
+  font-family: "Anton", sans-serif;
+  color: rgb(245, 248, 35);
+}
+
+#sobre h2 span,
+#informacoes h2 span,
+#orcamento h2 span {
+  color: rgb(245, 248, 35);
+}
+
+#cabecalho h2,
+#menu-navegacao .nav-pills .nav-link.active {
+  color: #fff;
+}
+
+#menu-navegacao .nav-pills .nav-link.active {
+  color: rgb(43, 42, 33);
+}
+
+#menu-navegacao .nav-pills .nav-link {
+  color: rgb(245, 248, 35);
+}
+
+#menu-navegacao .nav-pills .nav-link.active {
+  background-color: rgb(245, 248, 35);
+}
+
+#carousel-site img {
+  height: 87vh;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("https://img.icons8.com/ios/ffffff/circled-chevron-left--v1.png");
+}
+
+.carousel-control-next-icon {
+  background-image: url("https://img.icons8.com/ios/ffffff/circled-chevron-right--v1.png");
+}
+
+#carousel-site ol li {
+  list-style: none;
+}
+
+#cards-sobre h3,
+#cards-sobre h5,
+#cards-sobre button {
+  font-family: "Anton", sans-serif;
+}
+
+#cards-sobre .col-4 .card-text {
+  height: 160px;
+}
+
+#cards-sobre p {
+  margin: 0 16px;
+}
+
+#cards-sobre button {
+  background-color: rgba(245, 248, 35, 0.5);
+  border: none;
+  width: 48%;
+  color: black;
+}
+
+.card {
+  border: 3px solid black;
+}
+
+#cards-sobre footer {
+  background-color: rgb(155, 150, 104);
+  border-top: 3px dashed black;
+}
+
+#foto-luna,
+#foto-potter,
+#foto-jackson {
+  height: 416px;
+}
+
+#sobre-a-empresa p,
+#endereco p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#informacoes {
+  background-color: rgb(189, 187, 171);
+  height: 87vh;
+}
+
+#nav-objetivo {
+  border-right: 2px solid black;
+}
+
+#nav-objetivo .nav-tabs {
+  border: none;
+}
+
+#materiais .titulo-material {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 4px;
+  border-bottom: 2px solid black;
+}
+
+#materiais .titulo-material h3 {
+  margin: 0;
+}
+
+#materiais ul {
+  padding: 0;
+}
+
+#materiais li {
+  text-align: center;
+  list-style: none;
+}
+
+#materiais a {
+  width: 50%;
+  background-color: rgba(245, 248, 35, 0.5);
+  margin: 4px 0;
+}
+
+#atendimento ul li {
+  list-style: none;
+  margin: 0 0 4px 4px;
+}
+
+#atendimento ul li a img {
+  background-color: rgba(245, 248, 35, 0.5);
+  border-radius: 6px;
+  border: 2px solid black;
+}
+
+.tab-content {
+  border-top: 2px solid black;
+  padding-top: 12px;
+}
+
+#orcamento label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#orcamento .form-text {
+  color: #ccc;
+}
+
+#orcamento textarea::placeholder {
+  color: #ccc;
+}
+
+#orcamento button {
+  background-color: #fff;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  #cabecalho h2 {
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #cabecalho img {
+    width: 15%;
+    height: 15%;
+  }
+
+  #cabecalho .container .controle-button {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+
+  #carousel-site img {
+    height: 30vh;
+  }
+
+  #cards-sobre {
+    display: grid;
+    grid-template-columns: repeat(1, 300%);
+  }
+
+  #cards-sobre .col-4 {
+    margin-bottom: 10px;
+  }
+
+  #nav-objetivo {
+    width: 100%;
+    border: none;
+  }
+
+  #sobre-a-empresa {
+    display: block;
+    margin-top: 10px;
+  }
+
+  #sobre-a-empresa img {
+    width: 300%;
+  }
+
+  #sobre-a-empresa h2 {
+    font-size: 32px;
+  }
+
+  #sobre-a-empresa p {
+    font-size: 14px;
+  }
+
+  #trash {
+    display: none;
+  }
+
+  #sobre-a-empresa .col-7 {
+    display: flex;
+  }
+
+  #informacoes .nav {
+    margin-bottom: 10px;
+  }
+
+  #materiais .row {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-left: 30px;
+  }
+
+  #materiais img {
+    width: 70%;
+    height: 70%;
+  }
+
+  #materiais h3 {
+    font-size: 20px;
+  }
+
+  #materiais .titulo-material {
+    border: none;
+    margin-left: 30px;
+  }
+
+  #materiais a {
+    font-size: 10px;
+    width: 300%;
+  }
+
+  #atendimento h2 {
+    font-size: 36px;
+  }
+
+  #atendimento p {
+    font-size: 20px;
+  }
+
+  #orcamento .row {
+    display: block;
+  }
+
+  #orcamento .row .col-6 {
+    width: 100%;
+  }
+
+  #imagem-orcamento {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #carousel-site img {
+    height: 30vh;
+  }
+
+  #cards-sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  #cards-sobre .col-4 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #cards-sobre .col-4 p {
+    font-size: 16px;
+  }
+
+  #sobre-a-empresa {
+    display: block;
+    margin-top: 10px;
+  }
+
+  #sobre-a-empresa img {
+    width: 300%;
+  }
+
+  #sobre-a-empresa h2 {
+    font-size: 40px;
+  }
+
+  #sobre-a-empresa p {
+    font-size: 20px;
+  }
+
+  #sobre-a-empresa .col-7 {
+    display: flex;
+  }
+
+  #informacoes .nav {
+    margin-bottom: 10px;
+  }
+
+  #materiais .row {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-left: 30px;
+  }
+
+  #materiais img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #materiais h3 {
+    font-size: 32px;
+  }
+
+  #materiais .titulo-material {
+    border: none;
+    margin-left: 30px;
+  }
+
+  #materiais a {
+    font-size: 20px;
+    width: 300%;
+  }
+
+  #orcamento .col-6 {
+    width: 100%;
+  }
+
+  #imagem-orcamento {
+    display: none;
+  }
+}

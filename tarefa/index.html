@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LP - Energia</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600&family=Pacifico&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header id="cabecalho"
+            class="navbar navbar-expand-lg sticky-top pt-4 pb-4">
+            <div class="container">
+                <img width="67" height="67" class="rounded me-md-3"
+                    src="https://img.icons8.com/external-others-inmotus-design/67/external-Puppy-dog-others-inmotus-design.png"
+                    alt="external-Dog-dog-others-inmotus-design" />
+                <h2 class="nav-brand">Luna <span>&</span> Potter</h2>
+                <img width="67" height="67" class="rounded ms-md-3"
+                    src="https://img.icons8.com/external-others-inmotus-design/67/external-Dog-dog-others-inmotus-design.png"
+                    alt="external-Puppy-dog-others-inmotus-design" />
+                <div class="controle-button">
+                    <button class="navbar-toggler"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu-navegacao"><span
+                            class="navbar-toggler-icon"></span></button>
+                </div>
+                <nav id="menu-navegacao"
+                    class="navbar-collapse collapse justify-content-end">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre">Quem
+                                somos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#informacoes">Informações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#orcamento">Orçamento
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel-site">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carousel-site" data-bs-slide-to="0"
+                    class="active"></li>
+                <li data-bs-target="#carousel-site" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carousel-site" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2500">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2019/08/31/11/53/solar-farm-4443338_1280.jpg"
+                        alt>
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2017/03/19/18/14/solar-energy-2157212_1280.jpg"
+                        alt>
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2017/06/30/16/31/solar-panels-2458717_1280.jpg"
+                        alt>
+                </div>
+            </div>
+            <a href="#carousel-site" class="carousel-control-prev"
+                role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#carousel-site" class="carousel-control-next"
+                role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="sobre">
+                <div class="container">
+                    <div class="row pt-5">
+                        <div class="col-12 mt-5 mt-md-0 mt-lg-0">
+                            <h2 id="sobre-heading"
+                                class="d-md-flex justify-content-center mt-5 mb-4 pt-4">Quem
+                                <span class="ms-2">Somos?</span></h2>
+                        </div>
+                    </div>
+                    <div class="row pb-5" id="cards-sobre">
+                        <div class="col-4">
+                            <article class="card">
+                                <img id="foto-jackson" class="card-img-top"
+                                    src="./image/jackson.jpg"
+                                    alt>
+                                <h3
+                                    class="card-title d-flex
+                                justify-content-center">Jackson</h3>
+                                <h5
+                                    class="card-subtitle d-flex
+                                justify-content-center">Schmitinho - O traidor</h5>
+                                <p class="card-text mt-1">Um homem que avarento
+                                    que tem em
+                                    seus pensamentos apenas a conquista do
+                                    dinheiro. Um
+                                    aventureiro que sempre que pode realiza
+                                    viagens pelo mundo
+                                    com seu inglês de nível duvidoso, porém que
+                                    o torcedor
+                                    colorado tenta aprimorar.</p>
+                                <footer class="card-footer">
+                                    <div class="d-flex justify-content-around">
+                                        <button class="btn btn-primary">
+                                            <img width="50" height="50"
+                                                src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+                                                alt="instagram-new--v1" />
+                                            Instagram
+                                        </button>
+                                        <button class="btn btn-primary">
+                                            <img width="50" height="50"
+                                                src="https://img.icons8.com/ios/50/linkedin.png"
+                                                alt="linkedin" />LinkedIn
+                                        </button>
+                                    </div>
+                                </footer>
+                            </article>
+                        </div>
+                        <div class="col-4">
+                            <article class="card">
+                                <img id="foto-luna" class="card-img-top"
+                                    src="./image/luna.jpeg"
+                                    alt>
+                                <h3
+                                    class="card-title d-flex
+                                justify-content-center">Luna</h3>
+                                <h5
+                                    class="card-subtitle d-flex
+                                justify-content-center">CEO - Deusa</h5>
+                                <p class="card-text mt-1">Um anjo, um ser
+                                    celestial de
+                                    carisma máxima. Nada no mundo é mais
+                                    perfeito, porém
+                                    atualmente por conta de sua idade e saúde à
+                                    Deusa tira
+                                    longos cochilos para descansar sua beleza
+                                    inabalável.</p>
+                                <footer class="card-footer">
+                                    <div class="d-flex justify-content-around">
+                                        <button class="btn btn-primary">
+                                            <img width="50" height="50"
+                                                src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+                                                alt="instagram-new--v1" />
+                                            Instagram
+                                        </button>
+                                        <button class="btn btn-primary">
+                                            <img width="50" height="50"
+                                                src="https://img.icons8.com/ios/50/linkedin.png"
+                                                alt="linkedin" />LinkedIn
+                                        </button>
+                                    </div>
+                                </footer>
+                            </article>
+                        </div>
+                        <div class="col-4">
+                            <article class="card">
+                                <img id="foto-potter" class="card-img-top"
+                                    src="./image/potter.jpeg"
+                                    alt>
+                                <h3
+                                    class="card-title d-flex
+                                justify-content-center">Potter</h3>
+                                <h5
+                                    class="card-subtitle d-flex
+                                justify-content-center">Estagiário - Comedor
+                                    de...</h5>
+                                <p class="card-text mt-1">O verdadeiro amigo do
+                                    homem.
+                                    Esse é o ser mais leal, entretanto da mesma
+                                    forma que sua
+                                    lealdade é alta a sua inteligência é
+                                    inversamente
+                                    proporcional. Nada que faz é muito útil, mas
+                                    sempre
+                                    divertido... é bom tê-lo por perto.</p>
+                                <footer class="card-footer">
+                                    <div class="d-flex justify-content-around">
+                                        <button class="btn btn-primary">
+                                            <img width="50" height="50"
+                                                src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+                                                alt="instagram-new--v1" />
+                                            Instagram
+                                        </button>
+                                        <button class="btn btn-primary">
+                                            <img width="50" height="50"
+                                                src="https://img.icons8.com/ios/50/linkedin.png"
+                                                alt="linkedin" />LinkedIn
+                                        </button>
+                                    </div>
+                                </footer>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="informacoes" class="pt-5 pb-5">
+                <h2 class="d-flex justify-content-center mt-5 mb-5 pt-5">I
+                    <span>nformações</span></h2>
+                <nav class="container d-md-flex">
+                    <div class="align-items-start pe-md-5"
+                        id="nav-objetivo">
+                        <div class="nav flex-md-column nav-tabs"
+                            role="tablist">
+                            <button class="nav-link btn btn-primary active"
+                                role="tab" data-bs-toggle="tab"
+                                data-bs-target="#empresa">Empresa</button>
+                            <button class="nav-link btn btn-primary" role="tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#materiais">Materiais</button>
+                            <button class="nav-link btn btn-primary" role="tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#atendimento">Atendimento</button>
+                        </div>
+                    </div>
+                    <div class="tab-content ms-md-5 w-100">
+                        <div class="tab-pane fade show active" id="empresa"
+                            role="tabpanel">
+                            <div class="row pb-lg-5" id="sobre-a-empresa">
+                                <div class="col-lg-5">
+                                    <img class="d-block w-100 rounded"
+                                        src="./image/empresa.jpg"
+                                        alt>
+                                </div>
+                                <div class="col-lg-7">
+                                    <h2
+                                        class=" ms-2">Sobre
+                                        a<span class="ms-2">empresa</span></h2>
+                                    <div>
+                                        <p class="ms-2">Lorem ipsum dolor sit
+                                            amet
+                                            consectetur
+                                            adipisicing elit. Ad magni vitae
+                                            excepturi unde
+                                            aliquid et quas inventore laudantium
+                                            maiores
+                                            quia odit, doloribus expedita fugiat
+                                            quasi
+                                            tempora, dicta voluptates explicabo
+                                            quibusdam.</p>
+                                        <p class="ms-2" id="trash">Lorem ipsum
+                                            dolor sit
+                                            amet
+                                            consectetur
+                                            adipisicing elit. At ab eos
+                                            distinctio,
+                                            aliquid
+                                            labore tenetur inventore animi
+                                            deserunt
+                                            deleniti
+                                            quae fugiat esse tempora nostrum
+                                            adipisci sit
+                                            sed recusandae dolore assumenda!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="materiais"
+                            role="tabpanel">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div
+                                        class="titulo-material">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios/50/ac-dc-converter.png"
+                                            alt="ac-dc-converter" />
+                                        <h3>Inversores</h3>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a class="btn"
+                                                href="https://www.solisinverters.com/pt?gclid=CjwKCAjwsKqoBhBPEiwALrrqiAwQ5Ib67zMDuMZ4fojuJEviPYajIZ5PqIgJ0XEZ8kapzFDDV5-SGxoCV6EQAvD_BwE"
+                                                target="_blank">Solis</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn"
+                                                href="https://pt.deyeinverter.com"
+                                                target="_blank">Deye</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn"
+                                                href="https://br.growatt.com"
+                                                target="_blank">Growatt</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <div
+                                        class="titulo-material">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios/50/solar-panel--v1.png"
+                                            alt="solar-panel--v1" />
+                                        <h3>Módulos</h3>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a class="btn"
+                                                href="https://www.canadiansolar.com/br/"
+                                                target="_blank">Canadian</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn"
+                                                href="https://www.jinkosolar.com/pt/"
+                                                target="_blank">Jinko</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn"
+                                                href="https://belenus.com.br/produtos/3/energia%20solar/painel%20fotovoltaico"
+                                                target="_blank">Belenus</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <div class="d-flex">
+                                        <div
+                                            class="titulo-material">
+                                            <img width="50" height="50"
+                                                src="https://img.icons8.com/ios/50/pavilion.png"
+                                                alt="pavilion" />
+                                            <h3>Estruturas</h3>
+                                        </div>
+                                    </div>
+                                    <li>
+                                        <a class="btn"
+                                            href="https://alu-cek.com.br/web/wp-content/uploads/2017/05/perfil-35x58-cantoneira-1.jpg"
+                                            target="_blank">Fibrocimento</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn"
+                                            href="https://canalsolar.com.br/wp-content/uploads/2021/03/Estruturas-de-fixacao-representam-10-do-custo-dos-equipamentos-de-um-sistema-fotovoltaico.jpg"
+                                            target="_blank">Cerâmico</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn"
+                                            href="https://loja.alu-cek.com.br/wp-content/uploads/2019/03/ALUZINCO-1-416x312.jpg"
+                                            target="_blank">Aluzinco</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fase" id="atendimento">
+                            <div
+                                class="row">
+                                <div class="col-6">
+                                    <div
+                                        class="d-flex w-100 justify-content-center">
+                                        <h2>Redes
+                                            <span>sociais</span></h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul
+                                                class="d-flex w-100 ps-0 justify-content-center">
+                                                <li>
+                                                    <a href="#">
+                                                        <img width="50"
+                                                            height="50"
+                                                            src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+                                                            alt="instagram-new--v1" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img width="50"
+                                                            height="50"
+                                                            src="https://img.icons8.com/ios/50/facebook-new.png"
+                                                            alt="facebook-new" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img width="50"
+                                                            height="50"
+                                                            src="https://img.icons8.com/ios/50/youtube-play--v1.png"
+                                                            alt="youtube-play--v1" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img width="50"
+                                                            height="50"
+                                                            src="https://img.icons8.com/ios/50/tiktok--v1.png"
+                                                            alt="tiktok--v1" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <div id="endereco">
+                                        <h2>E<span>ndereço</span></h2>
+                                        <p>Rua dos Bobos, 1234 - Bairro do
+                                            Tolos, RS</p>
+                                        <p>CEP: XXXXX-XXX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+
+            <section id="orcamento" class="pt-5 pb-5">
+                <div class="row w-100">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h2 class="pt-5 pb-5">O<span>rçamento</span></h2>
+                    </div>
+                    <form class="pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="nome" class="form-label">Nome</label>
+                                        <input id="nome" type="text"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input id="email" type="email"
+                                            class="form-control" required>
+                                        <div class="form-text fst-italic">Seu
+                                            email jamais
+                                            será
+                                            compartilhado com terceiros</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="telefone" class="form-label">Telefone</label>
+                                        <input id="telefone" type="tel"
+                                            class="form-control" required>
+                                        <div class="form-text fst-italic">Seu
+                                            telefone jamais
+                                            será
+                                            compartilhado com terceiros</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensagem" class="form-label">Sua
+                                            mensagem</label>
+                                        <textarea name="mensagem" id="mensagem"
+                                            class="form-control"
+                                            placeholder="Opcional"></textarea>
+                                    </div>
+                                    <button class="btn">Enviar</button>
+                                </div>
+                                <div class="col-6" id="imagem-orcamento">
+                                    <img class="d-block w-100 rounded mt-5 ms-5"
+                                        src="https://cdn.pixabay.com/photo/2017/09/07/08/53/money-2724235_1280.jpg"
+                                        alt>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+        "></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+        <script src="./lib/jquery.mask.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#telefone').mask('(00) 00000-0000')
+            })
+        </script>
+    </body>
+</html>
