@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bungee", sans-serif;
+}
+
+header {
+  background-color: blueviolet;
+  display: flex;
+  padding: 16px 0;
+  color: #fff;
+  border-bottom: 16px solid #341f97;
+  justify-content: center;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+header button {
+  margin-left: 16px;
+}
+
+form {
+  background-color: #c8d6e5;
+  text-align: center;
+  padding: 24px 0;
+  display: none;
+}
+
+input,
+button {
+  padding: 8px;
+}
+
+button {
+  background-color: #009432;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#botao-cancela {
+  background-color: red;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  list-style: none;
+  max-width: 25%;
+  position: relative;
+  max-height: 280px;
+  overflow-y: hidden;
+}
+
+ul li img {
+  max-width: 100%;
+}
+
+.overlay-imagem-link {
+  padding: 16px;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.overlay-imagem-link a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link {
+  opacity: 1;
+}
