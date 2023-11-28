@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarefa - EBAC</title>
+        <link rel="stylesheet" href="./lib/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header id="cabecalho">
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <h1>EBAC - Bootstrap</h1>
+                    <button class="navbar-toggler border-0" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+                        <span class="navbar-toggler-icon navbar-dark "></span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end"
+                        id="menu">
+                        <ul class="nav navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a href="#carousel-tag" class="nav-link active">Carousel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#noticias" class="nav-link">Notícias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sobre" class="nav-link">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contato" class="nav-link">Contatos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <div class="container">
+                <section id="carousel-tag">
+                    <h2>Carrousel</h2>
+                    <div class="carousel slide" id="imagens-carousel"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"
+                                data-bs-interval="3000">
+                                <a
+                                    href="https://pixabay.com/pt/vectors/plano-de-fundo-polígono-roxo-roxa-1409025/"
+                                    target="_blank"><img
+                                        class="d-block w-100"
+                                        src="img/triangles1.png" alt></a>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a
+                                    href="https://pixabay.com/pt/vectors/malha-plano-de-fundo-triângulos-1430107/"><img
+                                        class="d-block w-100"
+                                        src="img/triangles2.png" alt></a>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a
+                                    href="https://pixabay.com/pt/vectors/triângulos-polígono-geométrico-1430105/"><img
+                                        class="d-block w-100"
+                                        src="img/triangles3.png" alt></a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev"
+                            data-bs-target="#imagens-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next"
+                            data-bs-target="#imagens-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button data-bs-target="#imagens-carousel"
+                                class="active"
+                                data-bs-slide-to="0"></button>
+                            <button data-bs-target="#imagens-carousel"
+                                data-bs-slide-to="1"></button>
+                            <button data-bs-target="#imagens-carousel"
+                                data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                </section>
+                <section id="noticias">
+                    <h2>Noticias</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <article class="card">
+                                    <header
+                                        class="card-header d-flex justify-content-center">
+                                        <h4>Alumínio enferruja?</h4>
+                                    </header>
+                                    <img
+                                        src="https://www.inovacaotecnologica.com.br/noticias/imagens/010170221206-aluminio-enferruja.jpg"
+                                        alt>
+                                    <div class="card-body">
+                                        <p class="card-text">Apesar de ser o
+                                            metal mais
+                                            abundante na Terra, constituindo
+                                            mais de 8% da massa terrestre, o
+                                            alumínio só foi descoberto na
+                                            década de 1820, pelo físico
+                                            dinamarquês Hans Christian
+                                            Orsted. Isso é parcialmente
+                                            explicado porque o alumínio puro
+                                            não existe na natureza, uma vez
+                                            que ele se liga facilmente a
+                                            outros elementos como o
+                                            oxigênio.</p>
+                                    </div>
+                                    <footer
+                                        class="card-footer">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center">
+                                            <strong>Quer saber mais?</strong>
+                                            <a target="_blank"
+                                                href="https://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=por-que-aluminio-nao-enferruja&id=010170221206"
+                                                class="btn btn-primary justify-content-end">Leia
+                                                mais</a>
+                                        </div>
+                                    </footer>
+                                </article>
+                            </div>
+                            <div class="col-4">
+                                <article class="card">
+                                    <header
+                                        class="card-header d-flex justify-content-center">
+                                        <h4>Células solar</h4>
+                                    </header>
+                                    <img
+                                        src="https://www.inovacaotecnologica.com.br/noticias/imagens/010115220524-celula-solar-recorde-39-1.jpg"
+                                        alt>
+                                    <div class="card-body">
+                                        <p class="card-text">A nova célula é
+                                            mais eficiente e tem
+                                            um design mais simples que pode ser
+                                            útil para uma variedade de novas
+                                            aplicações, como aplicações de área
+                                            restrita ou aplicações espaciais de
+                                            baixa radiação," disse Myles
+                                            Steiner, do Laboratório Nacional de
+                                            Energia Renovável dos EUA. </p>
+                                    </div>
+                                    <footer
+                                        class="card-footer">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center">
+                                            <strong>Quer saber mais?</strong>
+                                            <a target="_blank"
+                                                href="https://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=celula-solar-recorde-mundial-eficiencia-luz-natural&id=010115220524"
+                                                class="btn btn-primary justify-content-end">Leia
+                                                mais</a>
+                                        </div>
+                                    </footer>
+                                </article>
+                            </div>
+                            <div class="col-4">
+                                <article class="card">
+                                    <header
+                                        class="card-header d-flex justify-content-center">
+                                        <h4>Baterias de Lítio</h4>
+                                    </header>
+                                    <img
+                                        src="https://www.inovacaotecnologica.com.br/noticias/imagens/020115230620-bateria-700whkg-3.jpg"
+                                        alt>
+                                    <div class="card-body">
+                                        <p class="card-text">Pesquisadores
+                                            chineses apresentaram
+                                            um protótipo em escala de
+                                            laboratório de uma bateria
+                                            recarregável de íons de lítio com
+                                            uma densidade impressionante de
+                                            711,3 watts-hora por quilograma
+                                            (Wh/kg).</p>
+                                    </div>
+                                    <footer
+                                        class="card-footer">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center">
+                                            <strong>Quer saber mais?</strong>
+                                            <a target="_blank"
+                                                href="https://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=bateria-litio-recorde-densidade&id=020115230620"
+                                                class="btn btn-primary justify-content-end">Leia
+                                                mais</a>
+                                        </div>
+                                    </footer>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="sobre">
+                    <h2>Sobre</h2>
+                    <div class="container-flex">
+                        <img
+                            src="https://portal.comunique-se.com.br/wp-content/uploads/2022/02/Mais-um-jornal-impresso-chega-ao-fim-no-Brasil-1280x720.jpg"
+                            alt>
+                        <div class="d-block">
+                            <h3>Quem somos:</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur
+                                adipisicing
+                                elit.
+                                Aperiam sequi dolorum qui? Delectus fuga odit,
+                                cum
+                                ratione quaerat adipisci enim magni, commodi
+                                quisquam
+                                repellat deserunt quam voluptatibus doloribus
+                                dolorum
+                                amet!<br>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Minima tenetur excepturi
+                                asperiores praesentium, animi quae doloribus cum
+                                necessitatibus consequuntur sunt tempora
+                                deleniti! Debitis ut ducimus, alias quo
+                                distinctio ipsum quas!<br>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Dolor nulla eaque dicta cum
+                                quam ipsum, temporibus quisquam ab voluptatibus
+                                soluta laudantium culpa aperiam. Minima dolore
+                                nemo at. Nulla, eligendi vero?</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="contato">
+                    <h2>Contatos</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div
+                                    class="container-contato container-flex">
+                                    <img width="80" height="80"
+                                        src="https://img.icons8.com/officel/80/person-male.png"
+                                        alt="person-male" />
+                                    <div class="d-block" id="contato-1">
+                                        <div class="d-flex">
+                                            <label for="nome-1">Nome:</label>
+                                            <p id="nome-1">Fulano</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <label for="funcao-1">Função:</label>
+                                            <p id="funcao-1">Orçamentista</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <label for="telefone-1">Telefone:</label>
+                                            <p id="telefone-1">+55 (XX) X
+                                                XXXX-XXXX</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <label for="email-1">Email:</label>
+                                            <p id="email-1">fulano@orcamento.com.br</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div
+                                    class="container-contato container-flex">
+                                    <img width="80" height="80"
+                                        src="https://img.icons8.com/officel/80/person-female-skin-type-5.png"
+                                        alt="person-female-skin-type-5" />
+                                    <div class="d-block" id="contato-2">
+                                        <div class="d-flex">
+                                            <label>Nome:</label>
+                                            <p id="nome-2">Beltrana</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <label>Função:</label>
+                                            <p id="funcao-2">Técnico responsável</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <label>Telefone:</label>
+                                            <p id="telefone-2">+55 (XX) X
+                                                XXXX-XXXX</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <label>Email:</label>
+                                            <p id="email-2">beltrana@tecnica.com.br</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer id="footer-pag">
+            <div
+                class="container d-flex justify-content-between align-items-center">
+                <p>Todos os direitos reservados &copy;</p>
+                <div>
+                    <img width="64" height="64"
+                        src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/64/external-instagram-a-popular-social-networking-service-with-magic-filters-logo-tritone-tal-revivo.png"
+                        alt="external-instagram-a-popular-social-networking-service-with-magic-filters-logo-tritone-tal-revivo" />
+                    <img width="64" height="64"
+                        src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/64/external-whatsapp-messenger-is-a-freeware-cross-platform-messaging-and-voice-over-ip-service-logo-tritone-tal-revivo.png"
+                        alt="external-whatsapp-messenger-is-a-freeware-cross-platform-messaging-and-voice-over-ip-service-logo-tritone-tal-revivo" />
+                    <img width="64" height="64"
+                        src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/64/external-github-with-cat-logo-an-online-community-for-software-development-logo-tritone-tal-revivo.png"
+                        alt="external-github-with-cat-logo-an-online-community-for-software-development-logo-tritone-tal-revivo" />
+                    <img width="64" height="64"
+                        src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/64/external-facebook-modern-logo-famous-global-social-network-online-service-logo-tritone-tal-revivo.png"
+                        alt="external-facebook-modern-logo-famous-global-social-network-online-service-logo-tritone-tal-revivo" />
+                </div>
+            </div>
+        </footer>
+        <script src="./lib/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
