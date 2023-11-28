@@ -6,7 +6,7 @@
 #### Data de finalização do curso: *--/--/----*
 
 ___
-####Observações:
+### Observações:
 Cada **branch** representa um módulo do curso contendo suas tarefas
 
 **Branchs** de projeto são apenas para a entrega de projetos requisitados pelo curso
