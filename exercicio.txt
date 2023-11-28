@@ -1,0 +1,7 @@
+Neste exercício você vai praticar a construção de funções com o JavaScript.
+
+Você deve criar uma função chamada "calculaArea".
+Ela deverá receber dois parâmetros:
+1) base
+2) altura
+Deverá retornar a multiplicação destes fatores.
