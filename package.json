@@ -1,0 +1,15 @@
+{
+  "name": "ebac",
+  "version": "1.0.0",
+  "description": "## Curso de programação fullstack em python",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass source/main.sass build/main.css --update"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
