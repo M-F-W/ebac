@@ -1,0 +1,1 @@
+function somarValor(){return 20}
