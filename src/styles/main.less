@@ -81,6 +81,23 @@ section {
     }
 }
 
+footer {
+    background-color: #color[background-color-head];
+    .width100();
+    position: sticky;
+    bottom: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: end;
+
+        li {
+            margin-right: 8px;
+        }
+    }
+}
+
 @media @breakpointTablet {
     .container {
         max-width: 80%;

@@ -85,6 +85,20 @@ section {
 .product-button:hover {
   background-color: #4cd137;
 }
+footer {
+  background-color: #182c61;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+footer .container {
+  display: flex;
+  justify-content: end;
+}
+footer .container li {
+  margin-right: 8px;
+}
 @media (max-width: 1023px) {
   .container {
     max-width: 80%;
