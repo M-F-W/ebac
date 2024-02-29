@@ -9,6 +9,9 @@
         display: grid
         grid-template-columns: repeat(4, 25%)
 
+        @media (max-width: 768px)
+            grid-template-columns: 1fr 1fr
+
         &__item
             text-align: center
             gap: 24px

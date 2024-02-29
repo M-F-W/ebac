@@ -7,11 +7,26 @@
         <link rel="stylesheet" href="/dist/styles/main.css" />
     </head>
     <body>
-        <section class="hero">
-            <div class="hero__content">
-                <h1 class="hero__content__branding">
+        <header class="header header--is-hidden">
+            <div class="header__container">
+                <h1 class="header__logo">
                     <img src="/dist/src/images/disneyplus.svg" alt="Disney+" />
                 </h1>
+                <ul class="header__links">
+                    <li class="header__links__item">
+                        <a class="button button--secondary" href="#">Assine Agora</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a class="button button--dark" href="#">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="hero__content">
+                <div class="hero__content__branding">
+                    <img src="/dist/src/images/disneyplus.svg" alt="Disney+" />
+                </div>
                 <h3 class="title--small">As melhores histórias em um só lugar.</h3>
                 <p>
                     <a href="#" class="link-text"> Assinar o Disney+ </a>
@@ -194,7 +209,13 @@
             </div>
         </section>
         <section class="watch-download-section watch-download-section--image-full">
-            <img src="/dist/src/images/fundo_rei_leao.png" alt="" />
+            <picture>
+                <source
+                    media="(max-width: 768px)"
+                    srcset="/dist/src/images/fundo_rei_leao_celular.png"
+                />
+                <img src="/dist/src/images/fundo_rei_leao.png" alt="" />
+            </picture>
             <div
                 class="watch-download-section__text_container watch-download-section--image-full__text_container"
             >
@@ -421,6 +442,6 @@
                 </p>
             </div>
         </footer>
-        <script src="/src/scripts/main.js"></script>
+        <script src="/dist/scripts/main.js"></script>
     </body>
 </html>
