@@ -1,28 +1,36 @@
-function Animal(tipo) {
-	this.tipo = tipo;
+const alunosNotas = [
+	{
+		nome: 'João',
+		nota: 10,
+	},
+	{
+		nome: 'Maria',
+		nota: 8,
+	},
+	{
+		nome: 'Pedro',
+		nota: 3,
+	},
+	{
+		nome: 'Fernanda',
+		nota: 4,
+	},
+	{
+		nome: 'Letícia',
+		nota: 9,
+	},
+];
+
+function maiorQueSeis(aluno) {
+	if (aluno.nota >= 6) {
+		console.log(
+			`O/A ${aluno.nome} tirou uma nota de ${aluno.nota} e ficou acima da média 6`
+		);
+	} else {
+		console.log(
+			`O/A ${aluno.nome} tirou uma nota de ${aluno.nota} e ficou abaixo da média 6`
+		);
+	}
 }
 
-function Gato(nome, tipo) {
-	this.nome = nome;
-	Animal.call(tipo);
-	const mia = function () {
-		console.log('Miau');
-	};
-}
-
-function Cachorro(nome, tipo) {
-	this.nome = nome;
-	Animal.call(tipo);
-	const mia = function () {
-		console.log('Au au');
-	};
-}
-
-function Barata(nome, tipo) {
-	this.nome = nome;
-	Animal.call(tipo);
-}
-
-const gato = new Gato('Lulu', 'Mamifêro');
-const cachorro = new Cachorro('Luke', 'Mamifêro');
-const barata = new Barata('Mingu', 'Inseto');
+alunosNotas.forEach(maiorQueSeis);
