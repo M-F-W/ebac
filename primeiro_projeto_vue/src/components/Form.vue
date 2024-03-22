@@ -24,7 +24,7 @@ const props = defineProps([
 			@keyup="props.receiveValueB"
 			@change="props.attValues" />
 		<select
-			@change="[]"
+			@change="props.receiveOperacao"
 			name="#"
 			id="">
 			<option value="+">Adição</option>
