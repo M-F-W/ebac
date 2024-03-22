@@ -1,5 +1,9 @@
 <script setup>
 import { reactive } from 'vue';
+import Header from './components/Header.vue';
+import Form from './components/Form.vue';
+import Result from './components/Result.vue';
+import Logs from './components/Logs.vue';
 
 const sum = (valorA, valorB) => {
 	return parseInt(valorA) + parseInt(valorB);
@@ -14,15 +18,7 @@ const div = (valorA, valorB) => {
 	return parseInt(valorA) / parseInt(valorB);
 };
 
-const showList = () => {
-	if ((eventLog.logs.length = '1')) {
-		return '';
-	} else {
-		return '1';
-	}
-};
 const resetEventLog = () => {
-	alert(eventLog.logs.length);
 	eventLog.logs = [{}];
 };
 
@@ -56,6 +52,10 @@ const calcRes = () => {
 	console.log(eventLog.operacaoTemp);
 };
 
+const attValues = () => {
+	eventLog.resultadoTemp = calcRes();
+};
+
 const addLog = () => {
 	const newLog = {
 		valorA: eventLog.valorATemp,
@@ -65,6 +65,7 @@ const addLog = () => {
 	};
 	eventLog.logs.push(newLog);
 };
+
 const eventLog = reactive({
 	valorATemp: '',
 	valorBTemp: '',
@@ -77,76 +78,27 @@ const eventLog = reactive({
 
 <template>
 	<div class="container">
-		<header class="p-5 mt-5 bg-light rounded-3">
-			<h1 class="text-center">Calculadora</h1>
-			<h3 class="text-center">Aritmética</h3>
-		</header>
-		<form
-			class="d-flex justify-content-around align-items-center"
-			@submit.prevent="addLog"
-			action="">
-			<input
-				type="number"
-				@change="
-					(newNumber) =>
-						(eventLog.valorATemp = newNumber.target.value)
-				" />
-			<span>{{ eventLog.operacaoTemp }}</span>
-			<input
-				type="number"
-				@change="
-					(newNumber) =>
-						(eventLog.valorBTemp = newNumber.target.value)
-				" />
-			<select
-				@change="
-					(selected) =>
-						(eventLog.operacaoTemp =
-							selected.target.value)
-				"
-				name="#"
-				id="">
-				<option value="+">Adição</option>
-				<option value="-">Subtração</option>
-				<option value="x">Multiplicação</option>
-				<option value="/">Divisão</option>
-			</select>
-			<button
-				class="btn btn-primary"
-				type="submit">
-				Calcular
-			</button>
-		</form>
-		<p class="fs-2 text-center fw-bold">
-			Resultado:
-			<span class="">{{ eventLog.resultadoTemp }}</span>
-		</p>
-		<div class="d-flex justify-content-around">
-			<h2>Operações anteriores</h2>
-			<button
-				class="btn btn-primary mb-3"
-				@click.prevent="
-					{
-						resetEventLog();
-					}
-				">
-				Resetar
-			</button>
-		</div>
-		<ul
-			class="list-group"
-			v-show="true">
-			<li
-				class="list-group-item"
-				v-for="logs in eventLog.logs">
-				<span
-					>{{ logs.valorA }}
-					{{ logs.operacao }}
-					{{ logs.valorB }} =
-					{{ logs.resultado }}
-				</span>
-			</li>
-		</ul>
+		<Header />
+		<Form
+			:add-log="addLog"
+			:receive-value-a="
+				(newNumber) =>
+					(eventLog.valorATemp = newNumber.target.value)
+			"
+			:receive-value-b="
+				(newNumber) =>
+					(eventLog.valorBTemp = newNumber.target.value)
+			"
+			:att-values="attValues"
+			:operacao-temp="eventLog.operacaoTemp"
+			:receive-operacao="
+				(selected) =>
+					(eventLog.operacaoTemp = selected.target.value)
+			" />
+		<Result
+			:resultado-temp="eventLog.resultadoTemp"
+			:resetEventLog="resetEventLog" />
+		<Logs :logs="eventLog.logs" />
 	</div>
 </template>
 
